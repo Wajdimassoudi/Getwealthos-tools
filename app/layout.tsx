@@ -8,11 +8,11 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'GetWealth OS - أدواتي | تحميل تيكتوك، شعارات، موسيقى مجاناً',
-  description: 'منصة أدوات مجانية شاملة: تحميل تيكتوك، صانع شعارات، مُعرف الموسيقى Shazam، بريد مؤقت، ومساعد ذكي',
+  title: 'tools OS go - أدوات مجانية للجميع',
+  description: 'منصة أدوات مجانية عصرية وسهلة الاستخدام: تحميل تيكتوك، صانع شعارات، مُعرف الموسيقى، وأكثر',
   generator: 'v0.app',
-  keywords: ['تحميل تيكتوك', 'صانع شعارات', 'أدوات مجانية', 'Shazam', 'بريد مؤقت', 'AI Chat'],
-  authors: [{ name: 'GetWealth OS' }],
+  keywords: ['أدوات مجانية', 'tools', 'تحميل', 'صانع شعارات', 'موسيقى', 'AI'],
+  authors: [{ name: 'tools OS go' }],
   icons: {
     icon: [
       {
@@ -34,11 +34,11 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: 'black-translucent',
-    title: 'GetWealth OS',
+    title: 'tools OS go',
   },
   openGraph: {
-    title: 'GetWealth OS - أدوات مجانية شاملة',
-    description: 'تحميل تيكتوك، صانع شعارات، موسيقى، وأكثر - مجاناً',
+    title: 'tools OS go - أدوات مجانية عصرية',
+    description: 'منصة أدوات مجانية متقدمة وسهلة الاستخدام للجميع',
     type: 'website',
   },
 }
