@@ -30,7 +30,6 @@
   "regions": ["sfo1"],
   "buildCommand": "next build",
   "outputDirectory": ".next",
-  "publicSource": "/public",
   "cli": {
     "analytics": true
   }
