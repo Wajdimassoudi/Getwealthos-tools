@@ -1,14 +1,14 @@
 'use client'
 
 import { useState, useContext, useEffect } from 'react'
-import LanguageContext from '@/contexts/LanguageContext'
+import LanguageContext, { translations } from '@/contexts/LanguageContext'
 import { Button } from '@/components/ui/button'
 import { getTempMailDomains, getTempMailEmails, copyToClipboard } from '@/lib/api-utils'
 import { Copy, Mail, AlertCircle, RefreshCw } from 'lucide-react'
 
 export default function TempMail() {
   const { language } = useContext(LanguageContext)
-  const t = language === 'ar' ? require('@/contexts/LanguageContext').translations.ar : require('@/contexts/LanguageContext').translations.en
+  const t = translations[language]
   
   const [domains, setDomains] = useState<string[]>([])
   const [selectedDomain, setSelectedDomain] = useState('')

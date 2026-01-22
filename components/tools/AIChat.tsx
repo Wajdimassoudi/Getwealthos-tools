@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useContext, useRef, useEffect } from 'react'
-import LanguageContext from '@/contexts/LanguageContext'
+import LanguageContext, { translations } from '@/contexts/LanguageContext'
 import { Button } from '@/components/ui/button'
 import { chatWithAI } from '@/lib/api-utils'
 import { Send, Trash2, AlertCircle } from 'lucide-react'
@@ -15,7 +15,7 @@ interface Message {
 
 export default function AIChat() {
   const { language } = useContext(LanguageContext)
-  const t = language === 'ar' ? require('@/contexts/LanguageContext').translations.ar : require('@/contexts/LanguageContext').translations.en
+  const t = translations[language]
   
   const [messages, setMessages] = useState<Message[]>([])
   const [input, setInput] = useState('')

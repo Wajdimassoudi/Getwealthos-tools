@@ -1,14 +1,14 @@
 'use client'
 
 import { useState, useContext } from 'react'
-import LanguageContext from '@/contexts/LanguageContext'
+import LanguageContext, { translations } from '@/contexts/LanguageContext'
 import { Button } from '@/components/ui/button'
 import { createLogo, copyToClipboard } from '@/lib/api-utils'
 import { Copy, Wand2, AlertCircle } from 'lucide-react'
 
 export default function LogoMaker() {
   const { language } = useContext(LanguageContext)
-  const t = language === 'ar' ? require('@/contexts/LanguageContext').translations.ar : require('@/contexts/LanguageContext').translations.en
+  const t = translations[language]
   
   const [theme, setTheme] = useState('')
   const [text, setText] = useState('')

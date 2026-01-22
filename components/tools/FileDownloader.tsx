@@ -1,14 +1,14 @@
 'use client'
 
 import { useState, useContext } from 'react'
-import LanguageContext from '@/contexts/LanguageContext'
+import LanguageContext, { translations } from '@/contexts/LanguageContext'
 import { Button } from '@/components/ui/button'
 import { getFileDownloadLink, copyToClipboard } from '@/lib/api-utils'
 import { Copy, Download, AlertCircle } from 'lucide-react'
 
 export default function FileDownloader() {
   const { language } = useContext(LanguageContext)
-  const t = language === 'ar' ? require('@/contexts/LanguageContext').translations.ar : require('@/contexts/LanguageContext').translations.en
+  const t = translations[language]
   
   const [url, setUrl] = useState('')
   const [loading, setLoading] = useState(false)

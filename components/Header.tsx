@@ -1,7 +1,7 @@
 'use client'
 
 import { useContext } from 'react'
-import LanguageContext from '@/contexts/LanguageContext'
+import LanguageContext, { translations } from '@/contexts/LanguageContext'
 import { useTheme } from '@/contexts/ThemeContext'
 import { Button } from '@/components/ui/button'
 import { Sun, Moon, Globe } from 'lucide-react'
@@ -9,7 +9,7 @@ import { Sun, Moon, Globe } from 'lucide-react'
 export default function Header() {
   const { language, setLanguage } = useContext(LanguageContext)
   const { isDark, toggleTheme } = useTheme()
-  const t = language === 'ar' ? require('@/contexts/LanguageContext').translations.ar : require('@/contexts/LanguageContext').translations.en
+  const t = translations[language]
 
   return (
     <header className="sticky top-0 z-50 bg-card border-b border-border backdrop-blur-sm">

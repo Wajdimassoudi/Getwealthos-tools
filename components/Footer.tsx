@@ -1,12 +1,12 @@
 'use client'
 
 import { useContext } from 'react'
-import LanguageContext from '@/contexts/LanguageContext'
+import LanguageContext, { translations } from '@/contexts/LanguageContext'
 import { Github, Twitter, Facebook, Linkedin } from 'lucide-react'
 
 export default function Footer() {
   const { language } = useContext(LanguageContext)
-  const t = language === 'ar' ? require('@/contexts/LanguageContext').translations.ar : require('@/contexts/LanguageContext').translations.en
+  const t = translations[language]
 
   const currentYear = new Date().getFullYear()
 
