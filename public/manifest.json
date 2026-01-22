@@ -1,0 +1,49 @@
+{
+  "name": "GetWealth OS - Free Tools Collection",
+  "short_name": "GetWealth OS",
+  "description": "All-in-one platform for downloading, converting, and creating content. TikTok downloader, logo maker, file downloader, Shazam, temp mail, and AI chat.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#ffffff",
+  "theme_color": "#3b82f6",
+  "categories": ["productivity", "utilities"],
+  "screenshots": [
+    {
+      "src": "/icon-light-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-light-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "TikTok Downloader",
+      "short_name": "TikTok",
+      "description": "Download TikTok videos",
+      "url": "/?tool=tiktok",
+      "icons": [
+        {
+          "src": "/icon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    }
+  ],
+  "prefer_related_applications": false
+}
